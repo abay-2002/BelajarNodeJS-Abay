@@ -1,0 +1,84 @@
+=== Nodejs REPL Read-Eval-Print-Loop ===
+
+Daftar isi:
+REPL basically sama seperti console pada browser.
+.help
+.load namaFile.js
+.break
+.clear
+.editor
+
+vi namaFile.js
+
+
+
+*REPL bekerja mirip seperti console pada browser.
+Pada terminal cukup jalankan perintah  node  (pastikan nodejs sudah terinstall didalam mesin kalian).
+
+contoh REPL:
+node
+> 1 + 1 // ini adalah Eval
+>2 // ini adalah Print
+> //ini adalah Loop
+
+
+== Melihat/Akses variable global ==
+*Selain script Javascript yang biasa kita akses kita juga punya akses ke variable global yang namanya  global  atau  global.
+Kita bisa lihat kita bisa melihat/pakai semua module yang ada didalam Node.
+
+
+== help ==
+.help untuk melihat special keyword atau special command
+
+
+== load == 
+.load berguna untuk mengambil isi dari file Javascript. Dan menggunakannya pada node REPL.
+.load namaFile.js
+
+ 
+== save ==
+.save untuk menyimpan file/baris kode yang telah kita tulis pada node REPL
+.save namaFile.js
+
+
+== break dan clear ==
+.break dan .clear untuk keluar ketika kita berada ditengah-tengah kode.
+.break
+.clear
+
+
+== .editor ==
+untuk masuk kedalam editor sama seperti vi tapi berada didalam REPL nodejs.
+.editor
+
+
+
+
+=== Wawasan tambahan vi editor ===
+vi namaFile.js // untuk masuk kedalam text editor bernama vi.
+i // untuk masuk ke insert mode vi.
+:wq // untuk write dan quit dari vi.
+
+
+=== perintah unix ===
+touch namaFile.js // perintah unix untuk bikin file.
+cat namaFile.js // untuk melihat isi dari file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

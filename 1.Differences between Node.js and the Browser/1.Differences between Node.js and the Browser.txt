@@ -1,0 +1,35 @@
+PERBEDAAN Nodejs dan browser
+
+*Menuliskan aplikasi yang berjalan pada browser tentu berbeda dengan membuat aplikasi menggunakan nodejs
+
+*Meskipun sama-sama menggunakan javascript tetap ada beberapa kunci perbedaan.
+
+*Dari sudut pandang frontend developer yang menggunakan javascript, nodejs memberikan kelebihan yang besar: kenyamanan menuliskan program apapun dari sisi Frontend maupun dari sisi Backend - dalam satu bahasa.
+
+*Kamu mendapatkan kesempatan yang besar, karena kami tahu bahwa fokus mempelajari bahasa yang baru cukup rumit, dan dengan menggukan bahasa yang sama untuk menjalankan semua pekerjaan pada web, - pada sisi client dan sisi server, kamu berada pada posisi unik yang diuntungkan.
+
+*Pada browser, kebanyakan yang kamu lakukan adalah kamu berinteraksi dengan DOM, ataupun Web platform APIs seperti Cookies. Hal itu tidak ada pada Nodejs, Tentu saja. Kamu tidak mempunyai document, window and object lainnya yang disediakan oleh browser.
+
+Dan didalam browser, kita tidak punya semua APIs yang Nodejs sediakan melalui modulesnya, seperti fungsionalitas filesystem access.
+
+Perbedaan besar lainnya adalah pada Nodejs kamu meng-control environmentnya. 
+Kecuali kamu membuat aplikasi open source dimana semua orang bisa mendopley dimanapun. 
+Kamu tau versi nodejs apa yang akan kamu jalankan di aplikasi tersebut. 
+Dibandingkan dengan Environment milik Browser, dimana kamu tidak mendapatkan kemewahan untuk memilih browser apa yang akan digunakan oleh pengunjung browser kamu, ini sangat memudahkan.
+
+Ini artinya kamu dapat menulis semua Javascript modern ES6-7-8-9 Yang disupport oleh Versi NodeJs kamu.
+
+Karena Javascript berjalan sangat cepat, tapi Browser bisa sedikit lambat untuk terupgrade, terkadang pada web kamu terhambat dengan Javascript/ECMAScript releases.
+
+Kamu bisa menggunakan Babel untuk mengubah kode kamu menjadi ES5-Compatible sebelum mengirimnya ke browser, tapi pada Nodejs kamu tidak perlu itu.
+
+Perbedaan lainnya adalah Nodejs menggunakan sistem module CommonJS, sementara itu pada Browser kita mulai melihat ES Modules standard yang dimplementasikan.
+
+Pada penerapannya, ini berarti adalah pada Nodejs kamu menggunakan require() dan import pada browser.
+
+
+
+
+
+
+

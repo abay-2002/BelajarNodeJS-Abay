@@ -1,0 +1,42 @@
+=== Rangkuman Belajar NodeJs ===
+== Command line NodeJs ==
+node namaFile.js // menjalankan file nodeJs 
+
+== Command line unix ==
+ls
+pwd
+clear
+cd
+touch // untuk membuat file
+cat // untuk melihat isi file
+
+== Command line NodeJs REPL ==
+node // masuk kedalam console REPL NodeJs sama seperti console pada web.
+.help
+.break
+.clear
+.editor
+.save
+.load namaFile.js // mengambil file JS.
+require()
+	export.module = variableYangInginDiExport
+	const variableYangInginDiExport = require('./fileModule');
+	variableYangInginDiExport('abay');
+
+== Command line Editor vi ==
+vi namaFile.js // masuk kedalam text editor vi.
+i // masuk kedalam mode Insert text editor vi.
+:wq // write quit, keluar dari mode text editor vi.
+
+== Menjalankan NodeJS ==
+NodeJs menganut system module.
+require()
+	export.module = variableYangInginDiExport
+	const variableYangInginDiExport = require('./fileModule');
+	variableYangInginDiExport('abay');
+
+
+
+
+
+

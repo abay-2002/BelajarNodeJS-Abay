@@ -1,0 +1,67 @@
+Perbedaan Nodejs dan Browser
+
+daftar isi:
+1.Cara menulis tentu berbeda meskipun bahasanya sama Javascript pada browser dan pada Nodejs.
+2.Client side dan Server side.
+3.Tidak ada DOM pada Nodejs melainkan Modules Nodejs.
+4.Environment pada Nodejs, Environment pada browser.
+5.Babel pada browser, Commonjs module system pada Nodejs.
+
+
+
+
+
+=== Cara menulis tentu berbeda meskipun bahasanya sama ===
+Meskipun sama-sama menggunakan Javascript.
+Menulis aplikasi yang berjalan diatas browser berbeda dengan aplikasi menggunakan nodejs ada kunci perbedaan antara Javascript pada browser dan Javascript pada nodejs.
+
+
+
+
+
+
+
+=== Client side dan Server Side ===
+Diuntungkan karena dengan menggunakan Nodejs kita bisa membuat Client side dan Server side hanya dengan menggunakan satu bahasa yaitu Javascript. Jadi kita tidak perlu belajar bahasa baru yang berbeda.
+
+
+
+
+
+
+=== Tidak ada DOM pada Nodejs melainkan Modules Nodejs ===
+Pada browser yang kebanyakan kamu lakukan adalah menggunakan DOM contohnya document, window menggunakan Web platform APIs seperti Cookies dan object lainnya yang telah disediakan oleh browser.
+Tidak pada Nodejs, tentunya pada Nodejs kita tidak punya Object yang disediakan oleh browser. 
+Didalam browser kita tidak dapat menggunakan APIs yang disediakan oleh Nodejs melalui modules, seperti filesystem access functionality.
+
+
+
+
+
+=== Environment pada Nodejs dibanding Environment pada Browser ===
+*Perbedaan besar lainnya adalah dengan menggunakan Nodejs kamu bisa mengendalikan/menkontrol Environmentnya.
+*Kecuali kamu membuat sebuah aplikasi/project open source dimana siapapun bisa mendeploy darimanapun.
+*Dibandingkan dengan Environment pada browser dimana kamu tidak mendapatkan kemewahan untuk memilih pada browser apa penggunamu akan mengunjungi.
+
+Ini artinya kamu dapat menulis semua Javascript modern ES6-7-8-9 Yang disupport oleh Versi NodeJs kamu.
+
+
+
+
+
+
+
+=== Babel pada browser, Commonjs module system pada Nodejs ===
+Karena Javascript bergerak/berkembang dengan cepat, terkadang web sedikit lambat untuk terupgrade, Terkadang pada WEB kamu terhambat dengan menggunakan Rilisan Javascript/ECMAScript.
+Kamu dapat menggunakan Babel untuk merubah kode Javascript agar compatible dengan ES5 sebelum mengirimnya ke browser, tapi dengan Nodejs, itu tidak dibutuhkan.
+	Nodejs menggunakan Commonjs module system, sementara pada browser kita melihat ES standard module yang diimplementasikan.
+
+Pada penerapannya, ini berarti kita menggunakan require() pada nodejs dan import pada browser.
+
+
+
+
+
+
+
+

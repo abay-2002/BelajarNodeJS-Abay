@@ -1,0 +1,30 @@
+=== RANGKUMAN V8 Javascript Engine ===
+
+
+
+== The V8 Javascript Engine ==
+V8 Javascript Engines adalah sebuah engine yang mengambil baris kode Javascript kita kemudian mengeksekusi kode Javascript tersebut.
+
+
+
+== V8 Engine terpisah dari browser ==
+V8 Engine terpisah dari browser ini memberikan keuntungan, dimana V8 ini kemudian menjadi Engine untuk Nodejs yang konteksnya tidak lagi berada didalam browser.
+
+V8 Engine menyediakan Runtime Environment. Web Platforms APIs, DOM dan lainnya yang disediakan oleh browser.
+
+Dengan keluarnya V8 engine dari browser memungkinkan kita untuk membuat aplikasi desktop. Dengan Project seperti Electron.
+
+
+
+== Performa ==
+V8 engines dibangun menggunakan C++ dan terus berkembang, Portable pada sistem Mac, Windows, Linux dan sistem operasi lainnya.
+
+
+
+
+
+
+
+
+
+

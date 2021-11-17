@@ -1,0 +1,83 @@
+RANGKUMAN
+
+daftar isi:
+1.The V8 Javascript Engines
+2.V8 Engine terpisah dari browser
+3.Performa
+4.Compilation
+
+
+=== The V8 Javascript Engine ===
+V8 Javascript Engine adalah engine yang menjalankan Google Chrome.
+Ini adalah sesuatu yang mengambil Javascript kita kemudian mengeksekusinya ketika browsing menggunakan Chrome.
+
+V8 menyediakan runtime environment yang dimana di eksekusi oleh Javascript.DOM,  dan Web Platform APIs lainnya disediakan oleh browser
+
+
+
+
+
+=== V8 Engine terpisah dari browser ===
+Hal yang keren dari Javascript engine adalah Enginenya independent/terhosting ditempat yang berbeda. Key features ini yang membuat kebangkitan Nodejs V8 dipilih menjadi engine untuk Nodejs.
+V8 Engine menjadi engine yang memberi power server-side code yang ditulis menggunakan Javascript.
+
+Ekosistem Nodejs sangat besar, berkat V8 yang memberi daya untuk aplikasi desktop, dengan project seperti electron.
+
+
+
+
+
+
+
+=== Performa ===
+V8 ditulis dalam C++, dan terus berkembang. Portable dan berjalan pada Mac, Windows, Linux dan beberapa sistem lainnya.
+
+V8 selalu berkembang, seperti Javascript engines, untuk mempercepat Web dan ekosistem Nodejs.
+
+
+
+
+=== Compilation ===
+Secara umum Javascript dipertimbangkan sebagai bahasa interpreted, tapi modern Javascript engines tidak lagi hanya terintrepreted, Javascript sudah bisa dicompile.
+
+Hal ini telah terjadi sejak 2009, ketika SpiderMonkey Javascript compiler ditambah pada Firefox 3.5, dan orang-orang mengikuti ide ini.
+
+Javascript internally dicompile oleh V8 dengan compilation just-in-time (JIT) untuk mempercepat eksekusi.
+
+Hal ini mungkin kontra, tapi sejak Google Maps diluncurkan pada 2004, Javascript berkembang dari bahasa yang tadinya secara umum mengeksekusi banyak baris code menjadi sebuah aplikasi komplit dengan ribuan bahkan ratusan ribu baris kode yang berjalan didalam browser.
+
+Aplikasi kita sekarang bisa berjalan selama berjam-jam didalam browser, daripada hanya menjadi beberapa form validasi ataupun script yang sederhana saja.
+
+Pada dunia yang baru ini, Compiling Javascript membuat masuk akal, karena Javascript yang tercompile akan lebih powerful daripadi bahasa yang secara murni terintrepreted.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+=== MENJALANKAN FILE NODEJS ===
+
+unix cli:
+pwd
+ls
+mkdir
+code .
+
+file index.js bisa menjadi file root untuk file nodejs
+cli:
+node . 
+
+*Pada Javascript di browser kita mempunyai object global window.
+Tidak pada NodeJs.
+
+*NodeJS menganut system modules.
+
+
+

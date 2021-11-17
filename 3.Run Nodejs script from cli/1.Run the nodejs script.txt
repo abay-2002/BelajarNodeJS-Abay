@@ -1,0 +1,41 @@
+=== Run Node.js scripts from the command line ===
+
+node app.js
+
+MENJALANKAN DENGAN BARIS SHEBANG/MEN
+#!/usr/bin/node
+
+
+Cara paling biasa untuk menjalankan program NodeJs adalah menjalankan perintah  node  
+tersedia secara global (ketika menginstall nodejs) dan kirim nama dari file yang ingin dieksekusi.
+Contoh: 
+BASH
+node app.js
+
+Diatas, adalah kamu memerintahkan secara eksplisit untuk menjalankan script dengan  node  .Kamu juga dapat meng-embed informasi ini kedalam file Javascript kamu dengan baris "shebang". "shebang" adalah baris pertama didalam file, dan memberi tahu OS intrepreter yang mana yang digunakan untuk menjalankan script. Dibawah adalah contoh baris pertama dari Javascript:
+
+BASH
+#!/usr/bin/node
+
+Diatas, kita secara eksplisit memberi jalur yang pasti dari intrepreter. Tidak semua Operating Systems mempunyai  node  didalam folder bin, tapi semua seharusnya punya  env   .Kamu bisa memberi tahu OS untuk menjalankan  env  dengan node sebagai parameter.
+
+BASH
+#!/usr/bin/env node
+
+
+Untuk menggunakan shebang, file kamu harus memiliki executable permission. Kamu bisa memberikan  app.js  executable permission dengan menjalankan:
+
+BASH
+chmod u+x app.js
+
+
+Sementara menjalankan perintah. pastikan kamu berada didalam directory yang sama dengan file  app.js  .
+
+
+
+
+
+
+
+
+
