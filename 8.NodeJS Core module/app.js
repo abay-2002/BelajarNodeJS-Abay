@@ -54,10 +54,7 @@ fs.readFile('readFile.txt', 'utf-8', (e, data) => {
 
 
 
-
-
-
-// = NodeJS/Core Module, readline =
+// = NodeJS/Core Module, readline = 
 const readline = require('readline');
 const rl = readline.createInterface({
     input:  process.stdin,

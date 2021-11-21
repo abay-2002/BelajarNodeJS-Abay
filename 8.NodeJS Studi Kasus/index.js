@@ -1,122 +1,68 @@
-// == NodeJS Module Studi Kasus ==
-// = Kasus =
-// Tulis nilai property dan value yang kemudian taruh pada File JSON menggunakan NodeJS Core Module.
-// Kita bisa memanfaatkan Module:
-// fileSystem
-// readline
-// writeFile
-// const fs = require('fs');
+// === Membuat Contatc App ===
+// Memanfaatkan: 
+// NodeJS Core Module
+// NodeJS Module System
 
-// Menginput Nama dan NoHp untuk props dan val object JSON.
-// const fs = require('fs');
-// const readline = require('readline');
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
+// == idenya adalah: ==
+// Ambil input user dari terminal -> simpan input user tersebut ke dalam file JSON.
+// Apabila pada system belum tersedia file JSON maka buatkan.
 
-// rl.question('Masukkan nama : ', (nama) => {
-//     rl.question('Masukkan No.Hp : ', (hp) => {
-//         const contact = {
-//             nama:nama,
-//             hp:hp
-//         };
-//         let file = fs.readFileSync('api/data.json', 'utf-8');
-//         // text -> JS Object,      JSON.parse()
-//         const contacts = JSON.parse(file);
-//         contacts.push(contact);
-//         // JS Object -> String,        JSON.stringify()
-//         // JS Object -> JSON Object.
-//         fs.writeFileSync('api/data.json', JSON.stringify(contacts));
-//         console.log('Terima Kasih data anda sudah terisi.');
-//         rl.close();
-//     })
-// });
+// == Algorithm ==
+// - Lakukan pengecekan pada system apakah ada folder & file JSON, apabila belum ada maka buat folder dan file JSON. ok
+// - Baca input dari terminal memanfaatkan module readline. ok
+// - Simpan input dari terminal kedalam Javascript Object. ok
+// - Baca file JSON. ok 
+// - Ambil hasil dari File JSON yang sudah dibaca tadi. ok
+// - Ubah bentuk file JSON ke Javascript Object ok 
+// - Push Object dari input user kedalam Object JSON yang sudah difetch dan diParse sebelumnya. ok
+// - Tulis variable hasil push ke Javascript Object ke bentuk format Object JSON. ok
 
-// Membuat contact app
-// memanfaatkan
-// JSON 
-// module:
-// fs exist
-// readLine
-// readFile
-// writeFile
-// promise
-
-// const readline = require('readline');
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// === Menggunakan Promise ===
-// daripada menggunakan callback, yang dapat menyebabkan callback hell kita dapat memanfaatkan Promise
-// rl.question('Masukkan nama : ', (nama) => {
-//     console.log(nama);
-//     rl.close();
-// })
-
+// == Code ==
 const fs = require('fs');
+const { stdin, stdout } = require('process');
 const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+
+// = membuat folder dan file JSON. =
+// folder
+let data = './data';
+if(!fs.existsSync(data)){
+    fs.mkdirSync(data);
+}
+
+// file
+let dataPath = './data/contacts.json';
+if(!fs.existsSync(dataPath)){
+    fs.writeFileSync(dataPath, '[]');
+}
+
+// = baca input dari terminal =
+let rl = readline.createInterface({
+    input: stdin,
+    output: stdout
+});
 
 let tulisPertanyaan = (pertanyaan) => {
     return new Promise((resolve, reject) => {
-        rl.question(pertanyaan, (answer)=>{
+        rl.question(pertanyaan, (answer) => {
             resolve(answer);
         });
     });
-}
+};
 
 let main = async () => {
-    let nama = await tulisPertanyaan('Masukkan nama :');
-    let hp = await tulisPertanyaan('Masukkan no hp : ');
-    let contact = {nama, hp};
-    // menyimpan hasil input user kedalam file JSON
-    let file = fs.readFileSync('api/data.json', 'utf-8');
+    let nama = await tulisPertanyaan('Nama : ');
+    let email = await tulisPertanyaan('Email : ');
+    let contact = {nama, email};
+    // baca file JSON.
+    let file = fs.readFileSync(dataPath, 'utf-8');
+    // JSON -> JS Object.
     let contacts = JSON.parse(file);
+    // JS Object push -> contact.
     contacts.push(contact);
-    fs.writeFileSync('api/data.json', JSON.stringify(contacts));
-    console.log('Terima Kasih data anda sudah terkirim');
+    // JS Object -> JSON, write file JSON.
+    fs.writeFileSync(dataPath, JSON.stringify(contacts));
+    console.log('Data berhasil disimpan');
     rl.close();
 }
 
 main();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
