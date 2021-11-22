@@ -1,0 +1,14 @@
+{
+  "name": "9.nodejs-studi-kasus-contact-app",
+  "version": "1.0.0",
+  "description": "contact app menggunakan NPM Module yargs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "akbar angkasa",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
