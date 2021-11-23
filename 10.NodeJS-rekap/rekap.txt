@@ -1,0 +1,6 @@
+// mengimplementasikan nodejs core module. Ok
+// mengimplementasikan nodejs local module. Ok
+// mengimplementasikan nodejs parse argument via command line, contoh: node . --nama Masukkan nama : Ok.
+
+// tidak menggunakan yargs
+// menggunakan vanilla nodejs

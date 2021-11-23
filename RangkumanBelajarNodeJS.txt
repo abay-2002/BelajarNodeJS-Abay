@@ -37,6 +37,30 @@ require()
 
 
 
+== rekap belajar NodeJS ==
+-core module
+-- fileSystem
+--- readFile, writeFile sycn dan async
+-- readline, question
+-- mkdir
+
+-local module
+--module.exports = {}
+--const exported = reuire('exported');
+
+-npm module
+--yargs
+
+= parse command line argument from terminal =
+-- process.argv
+
+
+
+
+
+
+
+
 
 
 

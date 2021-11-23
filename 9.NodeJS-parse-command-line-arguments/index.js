@@ -16,7 +16,12 @@ let rl = readline.createInterface({
 let tulisPertanyaan = (pertanyaan) => {
     return new Promise((resolve, reject) => {
         rl.question(pertanyaan , (answer) => {
-            resolve(answer);
+            if(!answer){
+                reject('data tidak terinput');
+                rl.close();
+            }else {
+                resolve(answer);
+            }
         })
     })
 }
