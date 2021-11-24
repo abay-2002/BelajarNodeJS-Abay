@@ -2,6 +2,7 @@ const fs = require('fs');
 const validator = require('validator');
 const chalk = require('chalk');
 
+// == add ==
 // menyimpan input user kedalam file json.
 let simpanData = async (nama, email, nohp) => {
     // cek apakah ada folder untuk menyimpan file api, buat apabila belom ada.
@@ -19,6 +20,8 @@ let simpanData = async (nama, email, nohp) => {
     let file = fs.readFileSync(dataPath, 'utf-8');
     let contacts = JSON.parse(file);
 
+
+    // === NoHp ===
     // cek apakah ada nomor hp duplikat.
     const duplikat = contacts.find((contactinjson) => contactinjson.nohp === nohp);
     if(duplikat){
@@ -33,6 +36,7 @@ let simpanData = async (nama, email, nohp) => {
         return false;
     }
 
+    // === Email ===
     // cek apakah ada duplikasi email.
     const duplikatEmail = contacts.find((contactinjson) => contactinjson.email === email);
     if(duplikatEmail){
@@ -47,13 +51,22 @@ let simpanData = async (nama, email, nohp) => {
         return false;
     }
 
+    // === push contact to contacts ===
     contacts.push(contact);
     fs.writeFileSync(dataPath, JSON.stringify(contacts));
     console.log(chalk.green.underline.bold('Terima kasih data berhasil tersimpan!'));
     return;
 }
 
-module.exports = {simpanData};
 
-// memvalidasi apakah email valid, console.log() apabila email tidak valid.
-// mengecek apakah ada nohp yang sama, jangan simpan data kedalam api apabila ada data nohp yang sama.
+// == list ==
+let list = () => {
+    // ambil isi dari api 
+    let dataPath = './data/api.json';
+    let jsonData = fs.readFileSync(dataPath, 'utf-8');
+    console.log(JSON.parse(jsonData));
+    return;
+}
+
+
+module.exports = {simpanData, list};

@@ -55,8 +55,7 @@ require()
 -- process.argv
 
 
-
-= array methode =
+= array method =
 find()
 push()
 slice()

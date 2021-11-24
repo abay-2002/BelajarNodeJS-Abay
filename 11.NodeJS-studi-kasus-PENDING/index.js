@@ -9,6 +9,7 @@
 // yargs, chalk, validator 
 
 // === NPM Module Yargs ===
+// parsing an argument via command line.
 // == Apa itu Yargs? ==
 // Yargs helps you build interactive command line tools by parsing arguments and generating an elegant user interface.
 // contoh: 
@@ -34,11 +35,12 @@
 const yargs = require('yargs');
 const saveFile = require('./saveFile');
 
+// === add ===
 yargs.command({
     command: 'add',
     describe: 'Menambahkan contact baru',
-    builder: {
-        nama: {
+    builder: { // argv, options the commands accept.
+        nama: { // argv flag.
             describe: 'nama lengkap',
             demandOption: true,
             type: 'string'
@@ -57,8 +59,20 @@ yargs.command({
     handler(argv){
         saveFile.simpanData(argv.nama, argv.email, argv.nohp);
     }
-});
+})
+    .demandCommand();
+;
+
+// === list ===
+yargs.command({
+    command: 'list',
+    describe: 'Melihat list api',
+    handler(){
+        saveFile.list();
+    }
+})
 
 yargs.parse();
+
 
 
