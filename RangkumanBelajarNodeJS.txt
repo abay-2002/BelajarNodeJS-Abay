@@ -56,9 +56,11 @@ require()
 
 
 
-
-
-
+= array methode =
+find()
+push()
+slice()
+foreach()
 
 
 
