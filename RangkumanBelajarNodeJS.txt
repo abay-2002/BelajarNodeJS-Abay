@@ -50,10 +50,11 @@ require()
 
 -npm module
 --yargs
+--command
+---builder
 
 = parse command line argument from terminal =
 -- process.argv
-
 
 = array method =
 find()

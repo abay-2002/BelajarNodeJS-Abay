@@ -1,0 +1,8 @@
+membuat contact app menerapkan: 
+nodejs core module
+nodejs local module
+nodejs third-party module 
+yargs, chalk, validator 
+
+-idenya adalah menampung input user kemudian menyimpan data user ke dalam file JSON.
+-input user divalidasi terlebih dahulu sebelum disimpan ke dalam file JSON.
