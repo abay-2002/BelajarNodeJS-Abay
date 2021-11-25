@@ -1,0 +1,21 @@
+4.know your runtime: 
+globall || process object.
+kalau pada konteks browser kita tau kita memiliki object window.
+Pada NodeJS kita berada diluar dari konteks browser jadi kita memiliki object global atau lebih dikenal dengan nama object process.
+
+5.Events
+Membuat sendiri event
+contoh event NodeJS:
+process.on('exit', function(){
+	// do something here
+})
+
+membuat sendiri event: 
+const event = require('events');
+
+let myEvent = event.on('lunch', () => {
+	console.log('yum');
+})
+
+myEvent
+
