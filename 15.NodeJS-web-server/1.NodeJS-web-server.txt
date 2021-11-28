@@ -1,0 +1,61 @@
+=== Introduction ===
+When you view a webpage in your browser, you are making a request to another computer on the internet, which then provides you the webpage as a response. That computer you are talking to via the internet is a web server. A web server receives HTTP requests from a client, like your browser, and provides an HTTP response, like an HTML page or JSON from an API.
+
+CLIENTCOMPUTER --HTTP-REQ--> SERVERCOMPUTER
+		<--HTTP-RES-- HTML, JSON 
+
+Node.js allows developers to use JavaScript to write back-end code, even though traditionally it was used in the browser to write front-end code. Having both the frontend and backend together like this reduces the effort it takes to make a web server, which is a major reason why Node.js is a popular choice for writing back-end code.
+
+In this tutorial, you will learn how to build web servers using the http module that’s included in Node.js. You will build web servers that can return JSON data, CSV files, and HTML web pages.
+
+
+
+
+
+=== Prerequisites ===
+-Pemahaman asynchronous programming 
+-NodeJs installed
+-Dasar NodeJS
+
+
+
+
+
+=== Step 1 — Creating a Basic HTTP Server ===
+Let’s start by creating a server that returns plain text to the user. This will cover the key concepts required to set up a server, which will provide the foundation necessary to return more complex data formats like JSON.
+
+1.Buat folder dan file untuk menyimpan code server kita.
+
+2.module http const http NodeJS.
+const http = require('http');
+The http module contains the function to create the server,
+
+3.Our next step will be to define two constants, the host and port that our server will be bound to:
+const host = 'localhost';
+const port = 8000;
+
+Seperti disebutkan sebelumnya, web servers menerima request dari browser dan clients lainnya.
+Kita bisa saja berinteraksi dengan web server dengan memasukkan domain name,
+yang kemudian diterjemahkan ke alamat IP oleh DNS Server.
+
+	CLIENT --HTTP-REQ--> WEBSERVER
+	CLIENT --DOMAIN-NAME--> WEBSERVER
+		--DOMAIN-NAME-> =DNS=SERVER==IP=ADDRESS=> WEBSERVER
+
+n.b: IP Address adalah sederetan angka yang unik yang mengidentifikasi sebuah mesin pada jaringan seperti internet.
+
+The value localhost is a special private address that computers use to refer to themselves. It’s typically the equivalent of the internal IP address 127.0.0.1 and it’s only available to the local computer, not to any local networks we’ve joined or to the internet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+source: https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module

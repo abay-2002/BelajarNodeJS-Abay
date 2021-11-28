@@ -8,3 +8,7 @@ myEvent.on('lunch', () => {
 })
 
 myEvent.emit('lunch');
+
+// eventEmitter();
+// require('events');
+// emit();

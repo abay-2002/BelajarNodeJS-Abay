@@ -1,0 +1,121 @@
+=== Rangkuman belajar NodeJS web server ===
+=== MEMBUAT WEB SERVER MENGGUNAKAN NODEJS ===
+
+daftar isi:
+== PENGENALAN ==
+== PREREQUISITES ==
+== MEMBUAT WEB SERVER MENGGUNAKAN NODEJS ==
+= StepByStep =
+= localhost dan port =
+= NodeJS special function =
+
+
+
+
+== PENGENALAN ==
+Yang terjadi ketika kita mengunjungi sebuah halaman web adalah.
+Halaman web akan melakukan HTTP Request ke WEB Server, kemudian WEB Server akan me-Response dengan HTTP Response.
+	CLIENT --HTTP-REQ--> WEBSERVER
+	CLIENT <--HTTP-RES-- WEBSERVER
+
+Data yang dikembalikan oleh WEBSERVER bisa berupa file PHP, HTML, JSON dari API dan sebagainya.
+
+
+
+== PREREQUISITES ==
+-Javascript.
+-Pemahaman asynchronous programming, terutama menggunakan asynchronous pada core module NodeJS.
+-NodeJS sudah terinstall.
+
+
+
+== MEMBUAT WEB SERVER MENGGUNAKAN NODEJS ==
+Pada latihan membuat pertama membuat WEB SERVER menggunakan NodeJS kita akan membuat WEB Server yang mengembalikan plain text.
+
+= StepByStep: =
+1.Buat folder dan file untuk code web server.
+BELAJAR-NODEJS/index.js
+
+2.Gunakan NodeJS Core module http.
+const http = require('http');
+
+3.Simpan localhost dan port pada variable.
+const host = 'localhost';
+const port = 8000;
+
+Seperti disebutkan sebelumnya, web servers menerima request dari browser dan clients lainnya.
+Kita bisa saja berinteraksi dengan web server dengan memasukkan domain name,
+yang kemudian diterjemahkan ke alamat IP oleh DNS Server.
+
+	CLIENT --HTTP-REQ--> WEBSERVER
+	CLIENT --DOMAIN-NAME--> WEBSERVER
+		--DOMAIN-NAME-> =DNS=SERVER==IP=ADDRESS=> WEBSERVER
+
+n.b: IP Address adalah sederetan angka yang unik yang mengidentifikasi sebuah mesin pada jaringan seperti internet.
+
+== LOCALHOST dan PORT == 
+LOCALHOST
+localhost is a private address that computer uses to refer themselves.
+ Dengan kata lain localhost adalah alamat komputer itu sendiri.
+Biasanya IP addressnya sama dengan 127.0.0.1
+Dan hanya tersedia pada komputer local saja
+
+PORT
+The port is a number that servers use as an endpoint or “door” to our IP address. In our example, we will use port 8000 for our web server. Ports 8080 and 8000 are typically used as default ports in development, and in most cases developers will use them rather than other ports for HTTP servers.
+
+Dengan kata lain port adalah angka yang server gunakan sebagai endpoint atau "pintu" untuk alamat IP server kita. port yang biasa digunakan sebagai endpoint "pintu" pada WEB Server adalah port 8000 ataupun port 8080.
+
+When we bind our server to this host and port, we will be able to reach our server by visiting http://localhost:8000 in a local browser.
+http://localhost:8000
+
+== NodeJS special functions ==
+1.requestListener function ini bertanggung jawab untuk menangani HTTP Request yang masuk dan mengembalikan HTTP Response. Function ini harus mempunyai dua argument yaitu Object request dan Object response.
+Object request untuk mengambil data HTTP Request yang masuk.
+Object response untuk mengembalikan Responses HTTP Server.
+Note: Even though requestListener() does not use the req object, it must still be the first argument of the function.
+
+
+
+= GARIS BAWAH: =
+1.localhost	biasanya 127.0.0.1
+2.port		biasanya 8000.
+3.Client dan WEB Server.
+4.IP Address dan DNS server.
+-- NodeJS special functions --
+- Creating a basic HTTP Server -
+1.requestListener(req, res)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

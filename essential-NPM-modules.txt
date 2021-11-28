@@ -1,0 +1,4 @@
+=== NodeJS essentials NPM modules ===
+Yargs
+Validator
+Chalk
