@@ -1,0 +1,39 @@
+=== Belajar Express NodeJS ===
+ExpressJS
+*Membantu pengelolaan aliran data dari server ke aplikasi.
+*Web App framework yang dibuat diatas NodeJS
+*Menyediakan antarmuka yang minimal untuk kakas yang diperlukan dalam membuat sebuah aplikasi web.
+
+Fitur-fitur NodeJS.
+*Menangani request dengan berbagai metode HTTP dengan mudah (routes).
+*MVC (Model View Controller).
+*View
+Terintegrasi dengan "view" rendering engine, untuk mengelola template.
+*Middleware.
+
+
+== Rangkuman ==
+*Middleware.
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
+
+Middleware functions can perform the following tasks:
+
+Execute any code.
+Make changes to the request and the response objects.
+End the request-response cycle.
+Call the next middleware function in the stack.
+If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function. Otherwise, the request will be left hanging.
+
+*MVC.
+*Pengelolaan aliran data dari server ke aplikasi.
+*view.
+*Request HTTP (routes).
+Menangani request metode HTTP dengan mudah (routes).
+
+
+
+=== Alhamdulillah hari ini sudah belajar ===
+1. Konsep Middleware pada ExpressJS
+2. Apa itu get
+3. request dan response
+4. Documentation ExpressJS
