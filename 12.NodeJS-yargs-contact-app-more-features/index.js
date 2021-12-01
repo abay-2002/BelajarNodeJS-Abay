@@ -88,6 +88,15 @@ yargs.command({
     }
 })
 
+yargs.command({
+    command: 'remove',
+    describe: 'Menghapus contact berdasarkan nama', 
+    handler(argv){
+        saveFile.remove(argv.nama);
+    }   
+})
+
+
 yargs.parse();
 
 

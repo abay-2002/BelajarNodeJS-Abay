@@ -53,7 +53,7 @@ require()
 --command
 ---builder
 
-= parse command line argument from terminal =
+= parse command line argument from terminal/menerima input dari command line di NodeJS =
 -- process.argv
 
 = array method =

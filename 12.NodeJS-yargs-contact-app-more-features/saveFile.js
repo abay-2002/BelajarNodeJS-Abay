@@ -8,6 +8,7 @@ let data = './data';
 if(!fs.existsSync(data)){
     fs.mkdirSync(data);
 }
+
 // cek apakah ada file untuk menyimpan api, buat apabila belom ada.
 let dataPath = './data/api.json';
 if(!fs.existsSync(dataPath)){
@@ -102,7 +103,36 @@ let detail = (nama) => {
     console.log(hasil.nohp);
 }
 
-module.exports = {simpanData, list, detail};
 
 // beberapa fitur:
 // detail, list, add, remove(belum)
+
+
+// === delete ===
+// ketika user memberi command delete diikuti dengan argv nama, maka fetch data dari api.json kemudian cocokan data input user dengan data pada contact api.json apabila ada nama yang sesuai/cocok maka lakukan hapus nama tersebut.
+// algorithm hapus:
+// ketika nama argv sudah cocok dengan nama yang berada pada api.json maka buat array baru berdasarkan api.json tapi tanpa nama yang cocok tersebut.
+// 1.fetch data dari api.
+// 2.cocokan argv yang diberikan user dengan data yang ada pada index dari salah satu element api.
+// 3.apabila argv sesuai dengan element yang berada didalam api maka lakukan penghapusan object berdasarkan nama tersebut.
+let remove = (nama) => {
+    let c = fs.readFileSync('./data/api.json','ascii');
+    let contacts = JSON.parse(c);
+    const contact = contacts.find((element) => nama == element.nama);
+    if(contact){
+        // cari index
+        const index = contacts.indexOf(contact);
+        contacts.splice(index, 1);
+        // simpan hasil hapus ke dalam api
+        fs.writeFileSync('./data/api.json', JSON.stringify(contacts));
+        console.log(chalk.green.inverse.bold(`Contact nama: ${nama} berhasil dihapus.`));
+        return false;
+    }
+
+    if(!contact){
+        console.log(chalk.yellow.inverse.bold(`Contact nama: ${nama} tidak ditemukan!`));
+        return false;
+    }
+}
+
+module.exports = {simpanData, list, detail, remove};
