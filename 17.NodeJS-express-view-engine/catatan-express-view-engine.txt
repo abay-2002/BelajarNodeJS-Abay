@@ -1,0 +1,16 @@
+=== NodeJS Express view engine ===
+1. Memudahkan pembuatan halaman HTML.
+2. Engine tersebut mengganti variable pada template kita dengan nilai sebenarnya, lalu menampilkannya dalam bentuk HTML.
+3. Memungkinkan membuat file template statis untuk aplikasi.
+
+Template engine/view engine:
+EJS (Embedded Javacript Template)
+*Simple Syntax
+*Simple Setup
+*Speedy execution
+*Easy debugging
+*Active Development
+
+Fitur-fitur express ejs:
+*control flow
+*layout system

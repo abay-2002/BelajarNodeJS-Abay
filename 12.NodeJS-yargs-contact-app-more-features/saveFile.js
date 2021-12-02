@@ -8,7 +8,7 @@ let data = './data';
 if(!fs.existsSync(data)){
     fs.mkdirSync(data);
 }
-
+ 
 // cek apakah ada file untuk menyimpan api, buat apabila belom ada.
 let dataPath = './data/api.json';
 if(!fs.existsSync(dataPath)){
