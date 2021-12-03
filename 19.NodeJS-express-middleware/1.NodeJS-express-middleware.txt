@@ -1,0 +1,41 @@
+=== NodeJS Express-middleware ===
+== Middleware? ==
+"Sebuah software yang menghubungkan software atau aplikasi lain."
+"Sebuah software yang berada diantara sistem operasi dan aplikasi."
+
+Logical Node		Software/Aplikasi
+Middleware		Middleware
+Physical Node		Operating System
+
+Middleware
+*database
+*web server
+*game engine
+*web application
+
+
+== Middleware web application ==
+Request => App => Response
+
+dengan Middleware:
+
+Request => Authentication App => Response
+Request => Authentication Routing App => Response
+Request => Authentication Routing Dll App => Response
+
+
+=== Express Middleware ===
+"Aplikasi Express itu sebenarnya berisi serangkaian pemanggilan fungsi middleware."
+Fungsi Middleware
+"Sebuah fungsi yang memiliki akses ke Object request(req), Object response(res), dan fungsi middleware berikutnya(next)."
+
+Express Middleware
+*User-defined Middleware
+	-Application-level middleware.
+	-Router-level middleware.
+	-Error-handling middleware.
+*Built-in middleware.
+*Third-party middleware.
+
+ 
+
