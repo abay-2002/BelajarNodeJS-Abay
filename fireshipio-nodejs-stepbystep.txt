@@ -11,11 +11,10 @@ process.on('exit', function(){
 })
 
 membuat sendiri event: 
-const event = require('events');
 
+const event = require('events');
 let myEvent = event.on('lunch', () => {
 	console.log('yum');
 })
 
-myEvent
-
+myEvent('lunch');

@@ -1,0 +1,15 @@
+=== ExpressJS ===
+Apa itu ExpressJS dan kenapa menggunakan ExpressJS?
+ExpressJS adalah sebuah web app framework yang berjalan diatas NodeJS bertugas memudahkan kita membangun web server 
+Fitur-fitur ExpressJS :
+view engine/layout
+middleware
+
+=== ExpressJS EJS ===
+Apa itu EJS dan kenapa menggunakan EJS?.
+EJS adalah view engine untuk ExpressJS.
+dengan menggunakan EJS penulisan view engine lebih mudah.
+
+
+=== express-ejs-layout ===
+adalah sebuah npm module untuk EJS memudahkan kita untuk menuliskan layout file ejs kita.

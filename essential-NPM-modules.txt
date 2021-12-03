@@ -1,4 +1,6 @@
 === NodeJS essentials NPM modules ===
-Yargs
+Yargs -> receive argument from terminal
 Validator
 Chalk
+EJS -> ExpressJS view engine
+nodemon

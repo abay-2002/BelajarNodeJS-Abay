@@ -1,0 +1,11 @@
+<body>
+    <h1><%= title %></h1>
+    <p>Ini adalah halaman <%= title %></p>
+    <ul>
+        <% halaman.forEach(hlm => { %>
+            <li>
+                <a href="<%= hlm.link %>"><%= hlm.halaman %> </a>
+            </li>
+        <% }) %>
+    </ul>
+</body>

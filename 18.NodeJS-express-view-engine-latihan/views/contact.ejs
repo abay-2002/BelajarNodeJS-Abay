@@ -1,0 +1,14 @@
+<%- include('layout/header') %>
+<%- include('layout/body') %> 
+<% if (mahasiswa.length < 1) { %>
+    <p>Data tidak ditemukan.</p>
+<% } else {%>
+    <p>Daftar Mahasiswa:</p>
+    <% mahasiswa.forEach(mhs => { %>
+        <ol>
+            <li>Nama: <%= mhs.nama %></li>
+            <li>Email: <%= mhs.email %></li>
+        </ol>
+    <% }) %>
+<% } %> 
+<%- include('layout/footer') %> 

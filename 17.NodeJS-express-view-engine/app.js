@@ -25,12 +25,16 @@
 
 // ==== Menggunakan ExpressJS ====
 // === Express view engine ejs: ===
-const express = require('express')
-const app = express()   
-const port = 8080
-
+const express = require('express');
+const app = express();   
+const port = 8080;
+const expressLayouts = require('express-ejs-layouts');
 // === EJS view engine ===
 app.set('view engine', 'ejs');
+
+// === EJS-layout ===
+app.use(expressLayouts);
+
 // === index.ejs ===
 app.get('/', (req, res) => {
     const halaman = [
@@ -48,6 +52,7 @@ app.get('/', (req, res) => {
         },
     ];
     res.render('index',{
+        layout: 'layout/main-layout',
         title:'Home',
         halaman: halaman
     });
@@ -84,6 +89,7 @@ app.get('/contact', (req, res) => {
         },
     ];
     res.render('contact',{
+        layout: 'layout/main-layout',
         title:'Halaman Contact',
         daftar: 'Nama siswa',
         mahasiswa: mahasiswa,
@@ -108,6 +114,7 @@ app.get('/about', (req, res) => {
         },
     ];
     res.render('about', {
+        layout: 'layout/main-layout',
         title: 'About',
         halaman: halaman,
     })
@@ -116,3 +123,9 @@ app.get('/about', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+// Teknologi yang digunakan:
+// ExpressJS
+// ExpressJS view engine menggunakan EJS
+// EJS view engine
+// express-ejs-layout
