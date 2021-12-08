@@ -1,0 +1,17 @@
+NodeJS udah belajar
+
+1.NodeJS REPL
+2.Core module, Local module, Third-party module/NPM module
+3.Passing argument via commandline memanfaatkan NPM module yargs
+4.NodeJS WEB Server
+5.NodeJS WEB Server menggunakan Express
+Essential NPM module:
+-yargs
+-Express
+-Express view engine
+-Express view engine menggunakan EJS (Embedded Javascript)
+6.Express Middleware
+Middleware:
+-Application-level
+-Router-level
+-Error-handling
