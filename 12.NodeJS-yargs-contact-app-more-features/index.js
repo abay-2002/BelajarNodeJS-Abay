@@ -60,7 +60,7 @@ yargs.command({
         saveFile.simpanData(argv.nama, argv.email, argv.nohp);
     }
 })
-    .demandCommand();
+.demandCommand();
 ;
 
 // === list ===

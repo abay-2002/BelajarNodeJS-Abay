@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nama</th>
+        <th scope="col">NoHp</th>
+        <th scope="col">Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% contacts.forEach((contact, i=0) => { i++ %>
+        <tr>
+          <th scope="row"><%= i %> </th>
+          <td><%= contact.nama %> </td>
+          <td><%= contact.nohp %> </td>
+          <td>
+            <a href="/contact/<%= contact.nama %> " class="btn btn-success badge rounded-pill"><i class="bi bi-info-circle"></i> Detail</a>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>

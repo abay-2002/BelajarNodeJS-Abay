@@ -1,0 +1,16 @@
+catatan nodejs core module
+
+secara logika pada komputer kita dapat melakukan
+membaca file, 
+menulis file, 
+mengecek apakah ada file,
+membuat file
+
+const fs = require('fs');
+readFile()
+readFileSync()
+writeFile()
+writeFileSync()
+existSync()
+exist()
+mkdir()

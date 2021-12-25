@@ -1,0 +1,15 @@
+<h1>Detail Contact</h1>
+<% if (!contact) { %>
+  <div class="alert alert-danger fw-bold" role="alert">
+    Contact tidak ditemukan <a href="/contact" class="alert-link fw-normal">Kembali ke halaman Contacts</a>.
+  </div>
+<% } else { %>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= contact.nama %> </h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= contact.email %> </h6>
+      <p class="card-text"><%= contact.nohp %> </p>
+      <a href="/contact" class="card-link">Kembali ke halaman contact</a>
+    </div>
+</div>
+<% } %> 

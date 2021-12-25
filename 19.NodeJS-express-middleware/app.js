@@ -26,7 +26,11 @@
 // === Express view engine ejs: ===
 const express = require('express');
 const app = express();   
-const port = 8080;
+const port = 3000;
+
+
+
+// === EJS ===
 const expressLayouts = require('express-ejs-layouts');
 // === EJS view engine ===
 app.set('view engine', 'ejs');
@@ -34,6 +38,11 @@ app.set('view engine', 'ejs');
 // === EJS-layout ===
 app.use(expressLayouts);
 
+// === Express Middleware ===
+// === Built-in middleware ===
+app.use(express.static('public'));
+
+// === User-defined middleware ===
 // === Application-level middleware ===
 app.use((req, res, next) => {
     console.log('Time : ', Date.now());

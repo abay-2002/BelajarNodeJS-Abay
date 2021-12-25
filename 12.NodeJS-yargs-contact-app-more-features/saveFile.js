@@ -2,7 +2,6 @@ const fs = require('fs');
 const validator = require('validator');
 const chalk = require('chalk');
 
-
 // cek apakah ada folder untuk menyimpan file api, buat apabila belom ada.
 let data = './data';
 if(!fs.existsSync(data)){

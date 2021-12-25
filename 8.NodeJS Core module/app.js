@@ -12,7 +12,7 @@
 // const { writeFile, writeFileSync, readFile, readFileSync } = require('fs');
 // Ingat kembali pada NodeJS kita tidak lagi menulis Javascript pada konteks browser, kita menulis Javascript pada konteks diluar Browser. ini memungkinkan kita untuk mengakses file pada system kita.
 
-// ooh i see in writing code we not only anticipated things goes right but also anticipated when things goes wrong like erro for example, and thats why we invented what we call callback, promise, async and await.
+// ooh i see in writing code we not only anticipated things goes right but also anticipated when things goes wrong like error for example, and thats why we invented what we call callback, promise, async and await.
 
 // == Core Module File System ==
 // = writeFileSync (Synchronous) =
