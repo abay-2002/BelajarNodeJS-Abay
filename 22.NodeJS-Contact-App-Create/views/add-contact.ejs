@@ -1,0 +1,16 @@
+<h1 class="mb-3"><%= title %></h1>
+<form action="/contact" method="post">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama:</label>
+        <input type="text" class="form-control" id="nama" name="nama" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="nohp" class="form-label">No Hp</label>
+        <input type="text" class="form-control" id="nohp" name="nohp" required>
+      </div>
+      <button type="submit" value="Submit" class="btn btn-primary">Kirim</button>
+</form>

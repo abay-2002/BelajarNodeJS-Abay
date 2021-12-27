@@ -6,7 +6,7 @@ let createDir = () => {
     if(!fs.existsSync(data)){
         fs.mkdirSync(data);
     }
-
+ 
     // bikin file api.json
     let dataPath = './data/api.json';
     if(!fs.existsSync(dataPath)){
@@ -27,9 +27,23 @@ let loadFile = () => {
 let findContact = (nama) => {
     let contacts = loadFile();
     let hasil = contacts.find((contact) => contact.nama.toLowerCase() === nama.toLowerCase());
-    console.log(hasil);
     return hasil; 
 }
 
-module.exports = {createDir, loadFile, findContact};
-// bikin file api.json
+// === Create | Menambah data ===
+// menimpa data
+let saveContact = (contacts) => {
+    fs.writeFileSync(dataPath, JSON.stringify(contacts));
+}
+
+// add contact | contact form
+let newContact = (newData) => {
+    let contacts = loadFile();
+    contacts.push(newData);
+    // save contact | timpa data
+    saveContact(contacts);
+    return
+}
+
+
+module.exports = {createDir, loadFile, findContact, newContact};

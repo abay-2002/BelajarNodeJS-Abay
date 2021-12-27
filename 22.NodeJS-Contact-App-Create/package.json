@@ -1,11 +1,11 @@
 {
-  "name": "20.nodejs-contact-app",
+  "name": "21.nodejs-contact-app-read-rekap",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start" : "nodemon app"
   },
   "author": "Akbar Angkasa",
   "license": "ISC",

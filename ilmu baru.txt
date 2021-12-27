@@ -1,0 +1,12 @@
+bikin fitur create
+algoritma:
+1.user mengclick tombol tambah contact pada halaman daftar contacts, 
+2.arahkan ke halaman form input data contact.
+3.ketika user mengclick submit, tambahkan data pada array api dengan menggunakan method array .push()
+4.simpan data input user 
+
+
+
+// kesimpulan:
+=== req.body ===
+ketika kita men-submit form dengan method post khususnya, maka data akan tersimpan pada object req.body
