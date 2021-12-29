@@ -45,5 +45,11 @@ let newContact = (newData) => {
     return
 }
 
+// validasi form
+// cekDuplikat
+let cekDuplikat = (nama) => {
+    const contacts = loadFile();
+    return contacts.find((element) => {element.nama === nama});
+}
 
-module.exports = {createDir, loadFile, findContact, newContact};
+module.exports = {createDir, loadFile, findContact, newContact, cekDuplikat};

@@ -1,0 +1,25 @@
+== Algoritma dan Logika Edit contact ==
+idenya adalah file yang ingin diubah/edit adalah file api.json
+
+algoritma:
+fetch data yang ingin di edit, data yang di fetch adalah data yang sesuai dengan data yang ingin di edit pada bagian detail
+
+CRUD
+Create	Membuat / Menambah
+Read 	Menampilkan
+Update	Mengubah
+Delete	Menghapus
+
+=== Logika / Algoritma menghapus data contact ===
+== Logika ==
+ketika ingin menghapus salah satu contact dari daftar contacts itu berarti kita harus menghapus object yang telah kita tentukan dari array api.json.
+
+== Algoritma ==
+= JSON =
+data daftar contacts tersimpan didalam array 
+
+
+Hapus contact dari daftar contacts berdasarkan nama
+
+validasi form menggunakan npm validator
+

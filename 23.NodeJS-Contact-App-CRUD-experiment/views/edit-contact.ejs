@@ -1,0 +1,18 @@
+<h1><%= title  %></h1>
+<a href="/contact" class="btn btn-danger badge rounded-pill bg-danger mb-3">Kembali ke Daftar Contact</a><br>
+<hr>
+<form method="post" action="/contact">
+    <div class="mb-3">
+      <label for="nama" class="form-label">Nama: </label>
+      <input type="text" class="form-control" id="nama" name="nama">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email: </label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="nohp" class="form-label">No Hp: </label>
+      <input type="nohp" class="form-control" id="nohp" name="nohp">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

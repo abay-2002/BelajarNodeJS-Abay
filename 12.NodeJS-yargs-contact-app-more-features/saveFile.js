@@ -127,11 +127,6 @@ let remove = (nama) => {
         console.log(chalk.green.inverse.bold(`Contact nama: ${nama} berhasil dihapus.`));
         return false;
     }
-
-    if(!contact){
-        console.log(chalk.yellow.inverse.bold(`Contact nama: ${nama} tidak ditemukan!`));
-        return false;
-    }
 }
 
 module.exports = {simpanData, list, detail, remove};

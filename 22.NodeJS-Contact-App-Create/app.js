@@ -1,7 +1,7 @@
 // Express NPM
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 3000;
 
 // Express view engine EJS
 var expressLayouts = require('express-ejs-layouts');
@@ -15,6 +15,11 @@ app.use(express.urlencoded());
 // createDir
 const createDir = require('./utils/contacts');
 createDir.createDir();
+
+// Express-validator
+const { body, validationResult, check } = require('express-validator');
+
+// findcontact
 
 // == Middleware Route ==
 // Home
@@ -85,7 +90,7 @@ app.get('/contact', (req, res) => {
         layout: 'layouts/main-layout',
         title: 'contact',
         halaman,
-        contacts
+        contacts,
     });
 })
 
@@ -113,11 +118,58 @@ app.get('/contact/add', (req, res) => {
 });
 
 // proses data contact form
-app.post('/contact', (req, res) => {
-    let contacts = require('./utils/contacts');
-    contacts.newContact(req.body);
-    res.redirect('/contact');
-});
+// app.post('/contact', (req, res) => {
+//     let contacts = require('./utils/contacts');
+//     contacts.newContact(req.body);
+//     res.redirect('/contact');
+// });
+
+const duplikat = require('./utils/contacts');
+// validasi data
+app.post(
+    '/contact',
+    [
+    body('nama').custom((value) => {
+        // const cekDuplikat = duplikat.cekDuplikat(value);
+        if (duplikat.cekDuplikat(value)) {
+          throw new Error('Nama sudah digunakan');
+        }
+        return true;
+    }),
+    check('email', 'Alamat email tidak valid').isEmail(),
+    check('nohp', 'No Hp tidak valid').isMobilePhone('id-ID')
+    ],
+    (req, res) => { 
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        res.status(400).json({ errors: errors.array() });
+        // const halaman = [
+        //     {
+        //         to: '/',
+        //         page: 'Home'
+        //     },
+        //     {
+        //         to: '/about',
+        //         page: 'About'
+        //     },
+        //     {
+        //         to: '/contact',
+        //         page: 'Contact'
+        //     }
+        // ];
+        // res.render('add-contact',{
+        //     layout: 'layouts/main-layout',
+        //     title: 'Form contact',
+        //     halaman,
+        //     errors:  errors.array()
+        // })
+    }else {
+        let contacts = require('./utils/contacts');
+        contacts.newContact(req.body);
+        res.redirect('/contact');
+    }
+  }
+);
 
 // details
 app.get('/contact/:nama', (req, res) => {
