@@ -1,0 +1,18 @@
+
+=============================
+== Rekap mongodb dan Atlas ==
+=============================
+
+Kita bisa dengan mudah terkoneksi ke layanan database cloud mongodb menggunakan beberapa cara diantaranya:
+1.MongoDB Shell / mongosh
+2.MongoDB Compass
+3.Aplikasi Third-party GUI 
+
+
+
+=================
+== Rekap Skill ==
+=================
+
+-Mengetahui cara koneksi Server MongoDB secara Local dan secara Cloud (MongoDB Atlas)
+-Mengetahui CRUD Pada Database MongoDB secara Local dan secara Cloud melalui Tiga cara yaitu: 1.CLI, 2.MongoDB Compass, 3.MongoDB Atlas.

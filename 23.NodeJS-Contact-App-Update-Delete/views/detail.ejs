@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= contact.nama %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= contact.nohp %> </h6>
+      <p class="card-text"><%= contact.email %> </p>
+      <div class="mb-3">
+        <a href="/contact/delete/<%= contact.email %>" onclick="return confirm('Hapus?')" class="btn btn-danger badge">Hapus</a>
+        <a href="/contact/edit-contact/<%= contact.nama %>" class="btn btn-success badge">Ubah</a>
+      </div>
+      <a href="/contact" class="card-link"><i class="bi bi-arrow-left-circle"></i> Kembali</a>
+    </div>
+  </div>

@@ -1,0 +1,61 @@
+=======================
+=== Apa itu MongoDB ===
+=======================
+
+MongoDB adalah sebuah database berbasis dokumen yang memiliki skalabilitas dan fleksibilitas yang kita inginkan dan juga memiliki fitur query dan indexing yang kita butuhkan.
+
+MongoDB adalah Database berbasis Dokumen.
+MongoDB memiliki fitur query dan indexing.
+
+
+
+
+=================================
+=== Database berbasis Dokumen ===
+=================================
+Salah satu dari tipe NoSQL Database
+
+NoSQL Database:
+*Not Only SQL
+
+*Schemaless / Flexible Schema
+*Denormalization
+
+*Non-relational Database
+
+*Unstructured, semi-structured, structured-data
+
+
+
+
+
+===========================
+=== Tipe NoSQL Database ===
+===========================
+*Key-value store
+-Redis
+
+*Document Based
+-MongoDB, CouchDB
+
+*Column-oriented Database
+-HBase, Cassandra
+
+*Graph Database
+-Neo4J
+
+
+
+======================================
+=== Terminologi pada NoSQL MongoDB ===
+======================================
+*Database
+*Collection
+*Document
+*Field
+*Embedded Document
+
+===================
+== MongoDB Atlas ==
+===================
+Cluster (tempat penyimpanan database didalam cloud MongoDB (Atlas))

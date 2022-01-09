@@ -1,0 +1,17 @@
+Delete
+Update
+
+== Algoritma edit contact ==
+Konsep:
+idenya adalah value dari property yang dipilih, dari salah satu object yang berada didalam array ingin diganti.
+
+== Algoritma : ==
+Fetch array/api
+
+lakukan pencarian dengan method find terhadap array tersebut.
+
+apabila pencarian data yang dikirim dari paramater sesuai dengan find yang berada pada array tersebut ambil index dari object array tersebut.
+
+lakukan method splice terhadap element array tersebut.
+
+tuliskan data yang baru ke dalam api tersebut.

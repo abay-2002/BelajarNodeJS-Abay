@@ -1,0 +1,52 @@
+
+=====================================
+== Dua cara mengkoneksikan mongodb ==
+=====================================
+1. Terkoneksi secara local
+*Menggunakan cli
+-buka terminal
+-ketik 'mongo' maka kita sudah berhasil tersambung dengan database mongodb.
+-sudah siap untuk bekerja dengan mongodb
+
+*Menggunakan GUI compass mongodb
+-buka compass mongodb
+-klik 'connect' maka kita sudah berhasil tersambung dengan server database mongodb
+-sudah siap untuk bekerja dengan mongodb
+
+2. Terkoneksi secara online menggunakan mongodb cloud/atlas
+Sign in ke Atlas MongoDB kemudian masuk ke cluster
+Koneksikan database bisa dengan menggunakan CLI, MongoDB Compass, ataupun Third-party
+
+
+====================================
+== mongodb cli command cheatsheet ==
+====================================
+*Menggunakan cli
+// melihat database
+	show dbs
+
+// menggunakan database
+	use namaDatabase
+
+// membuat collection didalam database
+	db.createCollection('namaCollection')
+
+// melihat daftar collections didalam sebuah database
+	show collections
+
+// memasukkan satu buah document didalam collection
+	db.namaDatabase.insertOne({nama: "Akbar", email: "akbar@gmail.com"})
+
+// melihat isi sebuah collection
+	db.collection.find()
+
+// memasukkan banyak document didalam sebuah collection
+	db.namaDatabase.insertMany([
+
+	])
+
+
+Catatan:
+*Ketika kita lupa untuk mendefinisikan nama sebuah collection didalam sebuah database maka nama collection tersebut akan otomatis sama dengan nama databasenya.
+
+database kelas => collection kelas

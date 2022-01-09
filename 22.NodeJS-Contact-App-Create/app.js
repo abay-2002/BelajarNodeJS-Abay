@@ -10,7 +10,7 @@ app.use(expressLayouts);
 
 // built-in middleware
 app.use(express.static('public',));
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 
 // createDir
 const createDir = require('./utils/contacts');
@@ -19,7 +19,8 @@ createDir.createDir();
 // Express-validator
 const { body, validationResult, check } = require('express-validator');
 
-// findcontact
+// contact local module
+const {cekDuplikat, findContact} = require('./utils/contacts');
 
 // == Middleware Route ==
 // Home
@@ -124,15 +125,16 @@ app.get('/contact/add', (req, res) => {
 //     res.redirect('/contact');
 // });
 
-const duplikat = require('./utils/contacts');
 // validasi data
+
+
 app.post(
     '/contact',
     [
-    body('nama').custom((value) => {
-        // const cekDuplikat = duplikat.cekDuplikat(value);
-        if (duplikat.cekDuplikat(value)) {
-          throw new Error('Nama sudah digunakan');
+    body('email').custom((value) => {
+        const duplikat = cekDuplikat(value);
+        if(duplikat) {
+          throw new Error('Email sudah digunakan');
         }
         return true;
     }),
@@ -142,27 +144,27 @@ app.post(
     (req, res) => { 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        res.status(400).json({ errors: errors.array() });
-        // const halaman = [
-        //     {
-        //         to: '/',
-        //         page: 'Home'
-        //     },
-        //     {
-        //         to: '/about',
-        //         page: 'About'
-        //     },
-        //     {
-        //         to: '/contact',
-        //         page: 'Contact'
-        //     }
-        // ];
-        // res.render('add-contact',{
-        //     layout: 'layouts/main-layout',
-        //     title: 'Form contact',
-        //     halaman,
-        //     errors:  errors.array()
-        // })
+        // res.status(400).json({ errors: errors.array() });
+        const halaman = [
+            {
+                to: '/',
+                page: 'Home'
+            },
+            {
+                to: '/about',
+                page: 'About'
+            },
+            {
+                to: '/contact',
+                page: 'Contact'
+            }
+        ];
+        res.render('add-contact',{
+            layout: 'layouts/main-layout',
+            title: 'Form contact',
+            halaman,
+            errors:  errors.array()
+        })
     }else {
         let contacts = require('./utils/contacts');
         contacts.newContact(req.body);

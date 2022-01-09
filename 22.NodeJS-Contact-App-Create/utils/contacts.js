@@ -48,8 +48,9 @@ let newContact = (newData) => {
 // validasi form
 // cekDuplikat
 let cekDuplikat = (nama) => {
-    const contacts = loadFile();
-    return contacts.find((element) => {element.nama === nama});
+    let contacts = loadFile();
+    let hasil = contacts.find((contact) => contact.nama.toLowerCase() === nama.toLowerCase());
+    return hasil;
 }
 
 module.exports = {createDir, loadFile, findContact, newContact, cekDuplikat};

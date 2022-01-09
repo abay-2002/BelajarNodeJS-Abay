@@ -1,0 +1,19 @@
+
+=====================
+=== MongoDB Atlas ===
+=====================
+
+Atlas adalah sebuah sebuah penyimpanan cloud database untuk MongoDB
+
+===================
+=== Terminologi ===
+===================
+
+*Cluster
+Adalah sebuah tempat penyimpanan databases kita pada Cloud Atlas.
+
+*Database Access 
+Untuk mengkoneksikan database kita perlu Access user inilah peran Database Access.
+
+*Network Access
+Untuk menentukan dari Ip Adress mana mongodb dapat terkoneksi.

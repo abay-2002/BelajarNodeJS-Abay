@@ -1,0 +1,14 @@
+
+==================================
+=== Catatan MongoDB dan NodeJS ===
+==================================
+
+// method2 dan object dapat menggunakan Async and Await ataupun menggunakan Callback:
+// new MongoClient(uri)        
+// .connect(error, client)   koneksi ke server mongodb
+// .db('namaDatabase')        koneksi ke database
+// .collection('namaCollection')    memilih collection didalam sebuah database
+// .insertOne({},(err, result))     Create
+
+// client / kita terhubung ke server.
+// client/server -> database -> collection 
