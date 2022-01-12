@@ -1,0 +1,19 @@
+{
+  "name": "25.mongodb-dan-nodejs-rekap",
+  "version": "1.0.0",
+  "description": "nodejs dan mongodb dan express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "author": "akbar angkasa",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongodb": "^4.3.0",
+    "nodemon": "^2.0.15"
+  }
+}

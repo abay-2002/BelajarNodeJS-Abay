@@ -1,0 +1,16 @@
+
+==================================================
+== MongoDB retrieve data to NodeJS from MongoDB ==
+==================================================
+
+*Beberapa cara untuk me-retrieve / read data dari MongoDB ke NodeJS.
+
+find()
+If you want to request results based on a set of criteria from the existing set of data, you can use a find operation such as the find() or findOne() methods.
+
+aggregate
+You can also use an aggregation operation to retrieve data. This type of operation allows you to apply an ordered pipeline of transformations to the matched data.
+
+watch/subscribe
+If you want to monitor the database for incoming data that matches a set of criteria, you can use the watch operation to be notified in real-time when matching data is inserted.
+

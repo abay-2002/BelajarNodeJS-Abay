@@ -28,23 +28,22 @@ Koneksikan database bisa dengan menggunakan CLI, MongoDB Compass, ataupun Third-
 // menggunakan database
 	use namaDatabase
 
-// membuat collection didalam database
+// membuat collection didalam database CREATE
 	db.createCollection('namaCollection')
 
-// melihat daftar collections didalam sebuah database
+// melihat daftar collections didalam sebuah database 
 	show collections
 
 // memasukkan satu buah document didalam collection
 	db.namaDatabase.insertOne({nama: "Akbar", email: "akbar@gmail.com"})
 
-// melihat isi sebuah collection
+// melihat isi sebuah collection READ
 	db.collection.find()
 
-// memasukkan banyak document didalam sebuah collection
+// memasukkan banyak document didalam sebuah collection CREATE
 	db.namaDatabase.insertMany([
 
 	])
-
 
 Catatan:
 *Ketika kita lupa untuk mendefinisikan nama sebuah collection didalam sebuah database maka nama collection tersebut akan otomatis sama dengan nama databasenya.

@@ -1,0 +1,4 @@
+To do
+Tujuan: 
+*Simpan / push data ke API dari halaman add-data untuk ditampilkan pada Halaman Contact 
+*Push object dari halaman add-data ke collection MongoDB untuk dituliskan pada Document yang berada didalam collection database Atlas.

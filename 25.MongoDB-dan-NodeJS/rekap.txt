@@ -1,0 +1,22 @@
+
+============
+=== QOTD ===
+============
+
+Already:
+Create
+Read
+Update
+Delete
+
+CRUD
+How to do CRUD inside NodeJS
+
+
+
+yang dibutuhkan untuk membuat koneksi server nodejs dan mongodb
+
+1.koneksi ke server mongodb bisa local maupun cloud (mongodb atlas)
+2.object wajib mongodb biasanya ditampung didalam variable client
+3.koneksi ke database 
+4.koneksi ke collection
