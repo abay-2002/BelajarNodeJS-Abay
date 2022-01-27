@@ -1,0 +1,45 @@
+
+=========================
+=== Passport Tutorial ===
+=========================
+Lessons that introduce the basics by building simple apps. Most useful when you are new to Passport and getting started.
+
+src: https://www.passportjs.org/docs/
+
+===========================
+=== Username & Password ===
+===========================
+src: https://www.passportjs.org/tutorials/password/
+
+Daftar isi: 
+*Introduction
+*Login Prompt
+*Verify Password
+*Establish Session
+*Log Out
+*Sign Up
+
+Introduction
+We will build a todo list app in this tutorial, complete with functionality that allows users to sign in with a username and password. This tutorial will teach you how to use Passport for authentication.
+
+If you want to see where we are headed, here's an example of the final result: https://github.com/passport/todos-express-password
+
+$ git clone https://github.com/passport/todos-express-starter.git username-password-tutorial
+
+Take a moment browse through the files in the starter app. As we work through this tutorial, we'll be using Express as our web framework, along with EJS as our template engine and CSS for styling. We will use SQLite as our database for storing data. Don't worry if you are not familiar with these technologies -- the necessary code will be provided at each step.
+
+===============
+== TechStack ==
+===============
+*Express web framework
+EJS template engine
+*CSS styling
+*SQLite database
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+=== mongoose prologue ===
+=========================
+Let's face it, writing MongoDB validation, casting and business logic boilerplate is a drag. That's why we wrote Mongoose.
+
+src: https://mongoosejs.com/
+
+Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+
+Three main concept of mongoose.
+1. Schema, Schema is how your data is structured.
+2. Model, Model is a form of structured data from the Schema structured/object.
+3. query, query is how you deal with the query of database againts your mongodb database.

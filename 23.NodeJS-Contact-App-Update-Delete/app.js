@@ -1,7 +1,7 @@
 // Express NPM
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // Express view engine EJS
 var expressLayouts = require('express-ejs-layouts');

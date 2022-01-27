@@ -1,0 +1,30 @@
+==============
+== Prologue ==
+==============
+How can I authenticate users?
+Authentication is another opinionated area that Express does not venture into. You may use any authentication scheme you wish. For a simple username / password scheme, see this example.
+
+Bagaimana caranya meng-authentication pengguna?
+Authentication adalah sebuah area/bidang lainnya yang dimana Express tidak terjun langsung. Kamu bisa menggunakan skema/cara yang kamu suka. Untuk skema/cara sederhana username / password, lihat contoh berikut.
+
+
+src: http://expressjs.com/en/starter/faq.html#how-can-i-authenticate-users
+
+=======================
+== Apa itu Passport? ==
+=======================
+Passport is middleware for Node.js that makes it easy to implement authentication and authorization. Whether you are building your first login page or are an expert in all things identity, the documentation will help you understand Passport and use it in your applications.
+
+Passport adalah middleware untuk Node.js yang mempermudah penerapan authentication dan authorization. Entah kamu membangun halaman login pertamamu atau seorang expert, documentation akan membantu kamu memahami Passport dan menggunakannya pada aplikasi kamu.
+
+src: https://www.passportjs.org/docs/
+
+
+== KESIMPULAN ==
+1.ExpressJS tidak terjun langsung untuk meng-authentication user / password.
+2.Passport adalah Third-party middleware untuk mempermudah pembuatan authentication dan authorization pada aplikasi ExpressJS.
+
+==> Tutorials
+
+
+

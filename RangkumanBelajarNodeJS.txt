@@ -65,6 +65,7 @@ foreach()
 
 === ExpressJS ===
 *get
+*post
 *req dan res
 *NodeJS core module http module
 *requestListener
@@ -79,3 +80,4 @@ foreach()
 
 == ExpressJS EJS view engine EJS-layout ==
 
+== axios ==

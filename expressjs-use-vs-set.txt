@@ -1,0 +1,10 @@
+ExpressJS .use() vs .set()
+
+.use() digunakan untuk meng-register sebuah middleware, 
+.set() digunakan untuk mengkonfigurasi suatu option.
+contoh: 
+
+// Express ejs view engine.
+var expressLayouts = require('express-ejs-layouts');
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
