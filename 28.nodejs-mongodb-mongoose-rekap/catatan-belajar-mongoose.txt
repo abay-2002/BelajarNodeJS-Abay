@@ -1,0 +1,16 @@
+=== Things we can do with mongoose ===
+
+With mongoose we could write a simpler syntax of mongodb 
+writing MongoDB validation, casting and business logic boilerplate is a drag. That's why we wrote Mongoose.
+
+Three main concept of mongoose/mongoose basics
+1. Schema	Schema is how your data is structured.
+2. Model	Model is the form of that structured data.
+3. query	query is how you play the data against the database.
+
+Features of mongoose
+*Schema types
+*Schema validation
+*Schema middleware
+*Schema method/vituals
+*query 

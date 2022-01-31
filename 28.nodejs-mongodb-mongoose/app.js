@@ -1,25 +1,26 @@
 const mongoose = require('mongoose');
-const dbName = 'belajarMongoose';
-const serverPassword = 'abay2002';
+
+// const dbName = 'belajarMongoose';
+// const serverPassword = 'abay2002';
+// mongoose.connect(`mongodb+srv://akbarangkasa:${serverPassword}@cluster0.b88w2.mongodb.net/${dbName}?retryWrites=true&w=majority`);
+mongoose.connect('mongodb://localhost/belajarMongoose');
 
 const Student = require('./student');
-
-mongoose.connect(`mongodb+srv://akbarangkasa:${serverPassword}@cluster0.b88w2.mongodb.net/${dbName}?retryWrites=true&w=majority`);
-
 // mongoose query
 run()
 async function run(){
     try {
         const student = await Student.create({
-            name: 'Akbar Angkasa', 
-            age: 18, 
+            name: 'Ananda Ajeng', 
+            age: 19, 
+            email: 'anandaajeng@gmail.com',
             address: {
-                street: 'Gudang air', 
-                city:'Jakarta'
+                street: 'Pedongkelan', 
+                city:'Jakarta Barat'
             }
         });
         console.log(student);
     } catch (error) {  
         console.log(error.message)
     }
-}
+}  

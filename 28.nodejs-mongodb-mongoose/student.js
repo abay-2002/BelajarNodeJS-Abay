@@ -6,13 +6,23 @@ const mongoose = require('mongoose');
 
 const addressSchema = mongoose.Schema({
     street: String,
-    city: String    
+    city: String
 })
 
 const studentSchema = mongoose.Schema({
     name: String,
-    age: Number, 
+    age: Number,
+    email: {
+        type: String,
+        required: true,
+        lowercase: true
+    },
     address: addressSchema
 })
 
-module.exports = mongoose.model('Student', x);
+module.exports = mongoose.model('student', studentSchema);
+
+// Mongoose sudah belajar:
+// 1. Schema, 2. Model, 3.Query, 4. Mongoose type data,
+// mongoose method cheatsheet.
+// .Schema(), .model(), .create() 

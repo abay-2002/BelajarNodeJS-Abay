@@ -28,8 +28,3 @@ Perbedaan lainnya adalah Nodejs menggunakan sistem module CommonJS, sementara it
 Pada penerapannya, ini berarti adalah pada Nodejs kamu menggunakan require() dan import pada browser.
 
 
-
-
-
-
-
