@@ -18,6 +18,7 @@ Sebelum langsung terjun belajar NodeJS ada baiknya kita memiliki beberapa penget
 7. Mongoose
 8. ExpressJS
 9. EJS
+10. Bootstrap 5
 
 ## Point penting pada repo ini:
 1. Apa itu NodeJS
@@ -43,16 +44,16 @@ belum
 ```bash
 git clone https://github.com/abay-2002/BelajarNodeJS-Abay.git
 ```
-## Sumber
-[NodeJS](https://nodejs.org/en/)
-[ExpressJS](http://expressjs.com/)
-[MongoDB](https://www.mongodb.com/)
-[Axios](https://axios-http.com/)
-[mongoose](https://mongoosejs.com/)
-[WebDevSimplified](https://www.youtube.com/c/WebDevSimplified)
-[Web Programming Unpas](https://www.youtube.com/c/WebProgrammingUNPAS)
-[StackOverFlow](https://stackoverflow.com/)
-[EJS](https://ejs.co/)
+## Sumber belajar
+1. [NodeJS](https://nodejs.org/en/)
+2. [ExpressJS](http://expressjs.com/)
+3. [MongoDB](https://www.mongodb.com/)
+4. [Axios](https://axios-http.com/)
+5. [mongoose](https://mongoosejs.com/)
+6. [WebDevSimplified](https://www.youtube.com/c/WebDevSimplified)
+7. [Web Programming Unpas](https://www.youtube.com/c/WebProgrammingUNPAS)
+8. [StackOverFlow](https://stackoverflow.com/)
+9. [EJS](https://ejs.co/)
 
 ## Contributor
 [Akbar Angkasa](https://akbarangkasaportfolio.netlify.app/)
