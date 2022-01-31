@@ -12,6 +12,12 @@ Sebelum langsung terjun belajar NodeJS ada baiknya kita memiliki beberapa penget
 1. NodeJS
 2. Javascript
 3. HTML
+4. NPM
+5. Axios
+6. MongoDB
+7. Mongoose
+8. ExpressJS
+9. EJS
 
 ## Point penting pada repo ini:
 1. Apa itu NodeJS
@@ -37,6 +43,17 @@ belum
 ```bash
 git clone https://github.com/abay-2002/BelajarNodeJS-Abay.git
 ```
+## Sumber
+[NodeJS](https://nodejs.org/en/)
+[ExpressJS](http://expressjs.com/)
+[MongoDB](https://www.mongodb.com/)
+[Axios](https://axios-http.com/)
+[mongoose](https://mongoosejs.com/)
+[WebDevSimplified](https://www.youtube.com/c/WebDevSimplified)
+[Web Programming Unpas](https://www.youtube.com/c/WebProgrammingUNPAS)
+[StackOverFlow](https://stackoverflow.com/)
+[EJS](https://ejs.co/)
+
 ## Contributor
 [Akbar Angkasa](https://akbarangkasaportfolio.netlify.app/)
 
