@@ -1,7 +1,7 @@
 # Belajar NodeJS -Abay / Akbar Angkasa
 Hello World! Selamat datang, ini adalah repo belajar NodeJS dan kawan-kawannya lebih tepatnya NodeJS dan Package-package pendukungnya seperti MongoDB (Database), ExpressJS (WEB Framework), nodemon, axios dan berbagai macam package lainnya.
 
-## Pre-requisites / Sebelum NodeJS
+## Pre-requisites / SeNodeJS
 #### "We learn how to walk before we learn how to run"
 Sebelum langsung terjun belajar NodeJS ada baiknya kita memiliki beberapa pengetahuan berikut terlebih dahulu:
 1. HTML.
@@ -40,7 +40,7 @@ Sebelum langsung terjun belajar NodeJS ada baiknya kita memiliki beberapa penget
 ## Install repo ini pada mesin kalian
 #### Penting!
 Pastikan Git sudah terpasang/terinstall pada mesin kalian.
-belum
+Jika belum silahkan download dan install pada [Git](https://git-scm.com/downloads)
 ```bash
 git clone https://github.com/abay-2002/BelajarNodeJS-Abay.git
 ```
