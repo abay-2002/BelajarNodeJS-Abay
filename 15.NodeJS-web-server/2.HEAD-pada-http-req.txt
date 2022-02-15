@@ -1,0 +1,13 @@
+== HEAD pada HTTP request ==
+HEAD Http Method
+HEAD is a request method supported by HTTP used by the World Wide Web. The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
+
+Contoh menggunakan Python:
+requests.head(url, params={key: value}, args)
+
+Kesimpulan: 
+Method Head akan mengembalikan Head dari request yang diberikan kepada protokol HTTP, tanpa menyertai bagian Body dari hasil request HTTP tersebut.
+Atau biasa disebut reponse headers dan isi dari HEAD adalah meta-information.
+
+Advanced with HEAD request
+The metainformation contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request. This method can be used for obtaining metainformation about the entity implied by the request without transferring the entity-body itself. This method is often used for testing hypertext links for validity, accessibility, and recent modification.

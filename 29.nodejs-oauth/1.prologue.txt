@@ -1,0 +1,54 @@
+=== Perbedaan JWT vs OAuth ===
+Simply put, authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. ... Authentication is used to verify that users really are who they represent themselves to be.
+
+
+Firstly, we have to differentiate JWT and OAuth. 
+Basically, 
+*JWT is a token format. 
+*OAuth is an authorization protocol that can use JWT as a token. 
+*OAuth uses server-side and client-side storage. 
+*If you want to do real logout you must go with OAuth2. 
+*Authentication with JWT token can not logout actually. Because you don't have an Authentication Server that keeps track of tokens. 
+*If you want to provide an API to 3rd party clients, you must use OAuth2 also. OAuth2 is very flexible. 
+*JWT implementation is very easy and does not take long to implement. 
+*If your application needs this sort of flexibility, you should go with OAuth2. 
+*But if you don't need this use-case scenario, implementing OAuth2 is a waste of time.
+*XSRF token is always sent to the client in every response header. It does not matter if a CSRF token is sent in a JWT token or not, because the CSRF token is secured with itself. Therefore sending CSRF token in JWT is unnecessary.
+
+Kesimpulan:
+JWT vs OAuth
+*JWT berformat token.
+*Penerapan JWT sangat mudah dan tidak memerlukan waktu yang lama untuk diterapkan.
+*JWT sebenarnya tidak bisa melakukan logout. 
+Karena kamu tidak mempunyai server authentication/autentikasi untuk melacak tokensnya.
+// itu berarti untuk melakukan autentikasi user kita memerlukan server.
+*JWT dapat melakukan logout dengan cara meng-expired token tersebut.
+*Is JWT used for authentication or authorization?
+*JWT is commonly used for authorization.
+*JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+When should you use JSON Web Tokens?
+
+Open Authorization
+OAuth, which stands for “Open Authorization,” allows third-party services to exchange your information without you having to give away your password.
+
+*OAuth adalah protokol autherization/authorisasi yang bisa menggunakan JWT sebagai token.
+*OAuth menggunakan storage/penyimpanan server-side dan client-side.
+Kalau kamu ingin melakukan logout sungguhan kamu harus menggunakan OAuth2.
+*Kalau kamu ingin menyediakan API clients pihak ketiga, kamu harus menggunakan OAuth2 juga.OAuth2 sangat fleksibel.
+*Tapi kalau kamu tidak membutuhkan skenario ini, menerapkan OAuth2 hanya buang-buang waktu saja.
+
+OAuth adalah autherization bukan authentication.
+Authentication is about proving you are the correct person because you know things. OAuth doesn't pass authentication data between consumers and service providers – but instead acts as an authorization token of sorts.
+
+== Lebih lanjut ==
+Source: https://stackoverflow.com/questions/39909419/what-are-the-main-differences-between-jwt-and-oauth-authentication#:~:text=Basically%2C%20JWT%20is%20a%20token,you%20must%20go%20with%20OAuth2.
+
+OAuth 1.0 vs OAuth 2.0
+https://www.synopsys.com/blogs/software-security/oauth-2-0-vs-oauth-1-0/#:~:text=OAuth%202.0%20is%20much%20more,Better%20separation%20of%20duties.
+
+When should you use JSON Web Tokens?
+https://jwt.io/introduction
+
+
+
+

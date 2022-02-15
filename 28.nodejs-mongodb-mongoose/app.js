@@ -10,15 +10,16 @@ const Student = require('./student');
 run()
 async function run(){
     try {
-        const student = await Student.create({
-            name: 'Ananda Ajeng', 
-            age: 19, 
-            email: 'anandaajeng@gmail.com',
-            address: {
-                street: 'Pedongkelan', 
-                city:'Jakarta Barat'
-            }
-        });
+        const student = await Student.deleteOne({name: 'Ananda Ajeng'})
+        // const student = await Student.create({
+        //     name: 'Akbar Angkasa', 
+        //     age: 19, 
+        //     email: 'akbarangkasa@gmail.com',
+        //     address: {
+        //         street: 'Jl. Gudang Air', 
+        //         city:'Jakarta Timur'
+        //     }
+        // });
         console.log(student);
     } catch (error) {  
         console.log(error.message)

@@ -1,0 +1,43 @@
+== JWT vs OAuth 1.0 vs OAuth 2.0 ==
+Apa itu Authentication vs Autherization?
+ Authentication adalah untuk mengetahui bahwa siapa orang tersebut.
+Sedangkan Autherization adalah dapat mengakses apa saja orang tersebut.
+
+= JWT =
+JWT (Javascript Web Tokens) berformat Tokens.
+JWT biasa digunakan untuk Autherization dan pertukaran data.
+JWT tidak dapat melakukan logout karena berformat Tokens.
+JWT dapat diakali logoutnya dengan meng-expired Tokensnya.
+
+= OAuth 1.0 dan OAuth 2.0 =
+Open Autherizations, adalah sebuah protokol atau framework/rangka-kerja.
+Berfungsi untuk meng-Autherizations user menggunakan Third-party API contohnya GitHub, Google, Facebook dan lainnya.
+
+= OAuth 1.0 =
+-Transport-Independent 
+Data pada OAuth1.0 bersifat independent dan tidak bergantung pada HTTPS/TLS.
+-Messages are each individually cryptographically signed.
+Setiap pesan yang dikirim menggunakan protokol OAuth1.0 akan cryptographically signed.
+Jadi apabila pesan di dalam komunikasi terstruktur atau ter-sign dengan tidak benar, maka semua transaksi tidak akan valid.
+-Basic Workflow:
+1.Client application registers with provider, such as Twitter.
+2.Twitter provides client with a “consumer secret” unique to that application.
+3.Client app signs all OAuth requests to Twitter with its unique “consumer secret.”
+4.If any of the OAuth request is malformed, missing data, or signed improperly, the request will be rejected.
+
+= OAuth 2.0 =
+-Transport-Dependent
+Data pada OAuth 2.0 bergantung pada protol HTTPS/TLS, Apabila konfigurasi TLSnya tidak baik dan adanya kesalahan pada protokol HTTPS/TLS maka resikonya adalah serangan man-in-the-middle(MitM)
+-Lebih mudah diterapkan dan lebih banyak penggunaannya tapi lebih rumit untuk dibuat lebih aman.
+-Lebih Flexible.
+-Better separation of duties.
+Menangani resources request dan handling Authorization dapat dipisah/dibagi-bagi pada OAuth 2.0
+-Basic Workflow:
+1.Client application registers with provider, such as Twitter.
+2.Twitter provides client with a “client secret” unique to that application.
+3.Client application includes “client secret” with every request.
+4.If any of the OAuth request is malformed, missing data, or contains the wrong secret, the request will be rejected.
+
+
+
+
